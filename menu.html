@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<meta name="theme-color" content="#fffaf6">
+<title>Menu &amp; Prices — Zilola Beauty Spa</title>
+<meta name="description" content="Full service menu and pricing for Zilola Beauty Spa.">
+<link rel="icon" type="image/png" href="assets/logo/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600&family=Italiana&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fffaf6;--peach:#fbe8df;--peach-2:#f6d8ca;--peach-3:#f0c8b6;--coral:#d96f55;--coral-dark:#bd5c46;--brown:#805d50;--text:#171412;--text-light:#6b5b54;--gold-light:#d4a574;--line:#ecd2c5;--display:'Italiana',Georgia,serif;--sans:'DM Sans','Montserrat',sans-serif;--shell:min(1400px,calc(100% - 64px))}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--text);font:400 15px/1.6 var(--sans)}
+img{display:block;width:100%;max-width:100%;height:auto}
+a{text-decoration:none;color:inherit}
+.shell{width:var(--shell);margin-inline:auto}
+
+/* HEADER */
+.hdr{background:var(--text);padding:20px 0}
+.hdr .in{display:flex;align-items:center;justify-content:space-between}
+.hdr .in .logo{height:76px;width:auto;object-fit:contain}
+.hdr .in a{color:rgba(255,255,255,.6);font-size:13px;transition:.25s}
+.hdr .in a:hover{color:var(--gold-light)}
+
+/* PAGE HEADER */
+.pg-hdr{padding:80px 0 40px;text-align:center;background:var(--peach)}
+.pg-hdr h1{font-family:var(--display);font-size:clamp(42px,6vw,80px);font-weight:400;line-height:1}
+.pg-hdr p{color:var(--brown);max-width:500px;margin:12px auto 0;font-size:16px}
+
+/* MENU */
+.menu{padding:60px 0}
+.cat{margin-bottom:48px}
+.cat-title{font-family:var(--display);font-size:28px;font-weight:400;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--coral);display:flex;align-items:center;gap:10px}
+.cat-title .ci{font-size:20px}
+.cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-radius:10px;transition:.2s}
+.row:hover{background:var(--peach)}
+.row .nm{font-size:14px;font-weight:500}
+.row .pr{font-family:var(--display);font-size:17px;color:var(--coral);white-space:nowrap;font-weight:600}
+.row .pr small{font-size:12px;font-weight:400;color:var(--text-light)}
+@media(max-width:700px){.cat-grid{grid-template-columns:1fr}}
+
+/* NOTE */
+.note{background:var(--peach-2);border-radius:12px;padding:20px;margin-top:32px;font-size:14px;color:var(--brown);text-align:center}
+
+/* FOOTER */
+.btm{text-align:center;padding:40px 0;border-top:1px solid var(--line)}
+.btm a{color:var(--coral);font-weight:500}
+.btm p{color:var(--text-light);font-size:13px;margin-top:8px}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="shell in">
+    <a href="/"><img class="logo" src="assets/logo/logo-zilola.png" alt="Zilola"></a>
+    <a href="/">&larr; Back to Home</a>
+  </div>
+</header>
+
+<section class="pg-hdr">
+  <div class="shell">
+    <h1>Menu &amp; Prices</h1>
+    <p>Full list of our services and pricing. Walk-ins welcome!</p>
+  </div>
+</section>
+
+<section class="menu">
+  <div class="shell">
+
+    <!-- 1. HAIRCUTS & STYLING -->
+    <div class="cat"><h3 class="cat-title"><span class="ci">&#9986;</span> Haircuts &amp; Styling</h3>
+      <div class="cat-grid">
+        <div class="row"><span class="nm">Women's Shampoo and Haircut</span><span class="pr">$40 <small>+</small></span></div>
+        <div class="row"><span class="nm">Women's Haircut and Blow-dry/Style</span><span class="pr">$50 <small>+</small></span></div>
+        <div class="row"><span class="nm">Men's Haircut</span><span class="pr">$32 <small>+</small></span></div>
+        <div class="row"><span class="nm">Children's Haircut</span><span class="pr">$20 <small>+</small></span></div>
+        <div class="row"><span class="nm">Blowout/Shampoo and Style</span><span class="pr">$35 <small>+</small></span></div>
+        <div class="row"><span class="nm">Blowout Setting/Curling/Flat-Iron</span><span class="pr">$50 <small>+</small></span></div>
+        <div class="row"><span class="nm">Up-Do</span><span class="pr">$65 <small>+</small></span></div>
+        <div class="row"><span class="nm">Bridal Up-Do <small>(with trial)</small></span><span class="pr">$135 <small>+</small></span></div>
+      </div>
+    </div>
+
+    <!-- 2. HAIR REPAIR -->
+    <div class="cat"><h3 class="cat-title"><span class="ci">&#10040;</span> Hair Repair Services</h3>
+      <div class="cat-grid">
+        <div class="row"><span class="nm">Oil Scalp Massage</span><span class="pr">$30 <small>+</small></span></div>
+        <div class="row"><span class="nm">Deep Conditioning Treatment</span><span class="pr">$10 <small>+</small></span></div>
+        <div class="row"><span class="nm">Detox and Repair Treatment</span><span class="pr">$20 <small>+</small></span></div>
+      </div>
+    </div>
+
+    <!-- 3. TEXTURE ENHANCEMENT -->
+    <div class="cat"><h3 class="cat-title"><span class="ci">&#10040;</span> Texture Enhancement</h3>
+      <div class="cat-grid">
+        <div class="row"><span class="nm">Perm / Relaxer</span><span class="pr">$95 <small>+</small></span></div>
+        <div class="row"><span class="nm">Keratin Straightening Treatment</span><span class="pr">$240 <small>+</small></span></div>
+        <div class="row"><span class="nm">Non-Formaldehyde Keratin Smoothing</span><span class="pr">$180 <small>+</small></span></div>
+      </div>
+    </div>
+
+    <!-- 4. COLOR ENHANCEMENT -->
+    <div class="cat"><h3 class="cat-title"><span class="ci">&#10040;</span> Color Enhancement</h3>
+      <div class="cat-grid">
+        <div class="row"><span class="nm">Olaplex Color Service</span><span class="pr">From $26</span></div>
+        <div class="row"><span class="nm">Color Correction</span><span class="pr">Consult</span></div>
+        <div class="row"><span class="nm">Glaze / Hint of Tint</span><span class="pr">$45 <small>+</small></span></div>
+        <div class="row"><span class="nm">Color Retouch</span><span class="pr">$65 <small>+</small></span></div>
+        <div class="row"><span class="nm">Single Process Color</span><span class="pr">$70 <small>+</small></span></div>
+        <div class="row"><span class="nm">Double Process Color</span><span class="pr">$80 <small>+</small></span></div>
+        <div class="row"><span class="nm">Ammonia Free Color</span><span class="pr">$145 <small>+</small></span></div>
+        <div class="row"><span class="nm">Balayage</span><span class="pr">$125 <small>+</small></span></div>
+        <div class="row"><span class="nm">Ombre</span><span class="pr">$125 <small>+</small></span></div>
+        <div class="row"><span class="nm">Multi-Dimensional Color</span><span class="pr">Consult</span></div>
+        <div class="row"><span class="nm">Full Head Highlights</span><span class="pr">$115 <small>+</small></span></div>
+        <div class="row"><span class="nm">Partial Highlights</span><span class="pr">$85 <small>+</small></span></div>
+        <div class="row"><span class="nm">Peek-a-Boo Highlights</span><span class="pr">$75 <small>+</small></span></div>
+        <div class="row"><span class="nm">Color w/ Highlights <small>(Double-Process)</small></span><span class="pr">$125 <small>+</small></span></div>
+        <div class="row"><span class="nm">Virgin Hair Color</span><span class="pr">Consult</span></div>
+      </div>
+    </div>
+
+    <!-- 5. MAKEUP ARTISTRY -->
+    <div class="cat"><h3 class="cat-title"><span class="ci">&#9825;</span> Makeup Artistry</h3>
+      <div class="cat-grid">
+        <div class="row"><span class="nm">Personalized Make-Up Application</span><span class="pr">$45 <small>+</small></span></div>
+        <div class="row"><span class="nm">Make-Up Lesson</span><span class="pr">$59 <small>+</small></span></div>
+        <div class="row"><span class="nm">Eyelash Extensions</span><span class="pr">$75 <small>+</small></span></div>
+        <div class="row"><span class="nm">Eyebrow Tint</span><span class="pr">$22</span></div>
+        <div class="row"><span class="nm">Eyelash Tint</span><span class="pr">$27</span></div>
+        <div class="row"><span class="nm">Temporary Eyelashes</span><span class="pr">$25</span></div>
+      </div>
+    </div>
+
+    <!-- 6. FACIALS & SPA -->
+    <div class="cat"><h3 class="cat-title"><span class="ci">&#10040;</span> Facials &amp; Spa Treatments</h3>
+      <div class="cat-grid">
+        <div class="row"><span class="nm">Korean Facial <small>(75 min)</small></span><span class="pr">$150</span></div>
+        <div class="row"><span class="nm">Organic Spa Facial <small>(60 min)</small></span><span class="pr">$125</span></div>
+        <div class="row"><span class="nm">Full Body Exfoliation &amp; Massage</span><span class="pr">$125</span></div>
+        <div class="row"><span class="nm">Algomask &amp; Red Light Therapy <small>(75 min)</small></span><span class="pr">$110</span></div>
+        <div class="row"><span class="nm">Deep Exfoliation &amp; Cleansing <small>(60 min)</small></span><span class="pr">$90</span></div>
+        <div class="row"><span class="nm">Express Facial <small>(30 min)</small></span><span class="pr">$60</span></div>
+        <div class="row"><span class="nm">Red Light Therapy <small>(25 min)</small></span><span class="pr">$50</span></div>
+      </div>
+    </div>
+
+    <!-- 7. NAILS -->
+    <div class="cat"><h3 class="cat-title"><span class="ci">&#10040;</span> Nails</h3>
+      <div class="cat-grid">
+        <div class="row"><span class="nm">Buff &amp; Polish</span><span class="pr">$14</span></div>
+        <div class="row"><span class="nm">Regular Manicure</span><span class="pr">$20</span></div>
+        <div class="row"><span class="nm">Regular Pedicure</span><span class="pr">$35</span></div>
+        <div class="row"><span class="nm">Regular Mani &amp; Pedi</span><span class="pr">$55</span></div>
+        <div class="row"><span class="nm">Gel Manicure</span><span class="pr">$40</span></div>
+        <div class="row"><span class="nm">Gel Pedicure</span><span class="pr">$55</span></div>
+        <div class="row"><span class="nm">Nail Art <small>(per nail)</small></span><span class="pr">$5</span></div>
+        <div class="row"><span class="nm">Hand Paraffin Wax Treatment</span><span class="pr">$10</span></div>
+        <div class="row"><span class="nm">Foot Paraffin Wax Treatment</span><span class="pr">$15</span></div>
+        <div class="row"><span class="nm">Natural Spa Pedicure</span><span class="pr">$45</span></div>
+        <div class="row"><span class="nm">Detox Himalaya Salt Spa Pedicure</span><span class="pr">$55</span></div>
+        <div class="row"><span class="nm">Aromatherapy Spa Pedicure</span><span class="pr">$60</span></div>
+      </div>
+    </div>
+
+    <!-- 8. THREADING -->
+    <div class="cat"><h3 class="cat-title"><span class="ci">&#10040;</span> Threading</h3>
+      <div class="cat-grid">
+        <div class="row"><span class="nm">Eyebrows</span><span class="pr">$14</span></div>
+        <div class="row"><span class="nm">Full Face</span><span class="pr">$45</span></div>
+        <div class="row"><span class="nm">Neck</span><span class="pr">$10</span></div>
+        <div class="row"><span class="nm">Sideburns</span><span class="pr">$12</span></div>
+        <div class="row"><span class="nm">Chin</span><span class="pr">$8</span></div>
+        <div class="row"><span class="nm">Lip</span><span class="pr">$8</span></div>
+      </div>
+    </div>
+
+    <!-- 9. WAXING -->
+    <div class="cat"><h3 class="cat-title"><span class="ci">&#10040;</span> Waxing</h3>
+      <div class="cat-grid">
+        <div class="row"><span class="nm">Eyebrow</span><span class="pr">$18</span></div>
+        <div class="row"><span class="nm">Lip or Chin or Neck</span><span class="pr">$14</span></div>
+        <div class="row"><span class="nm">Sideburns</span><span class="pr">$17</span></div>
+        <div class="row"><span class="nm">Lip &amp; Eyebrow</span><span class="pr">$27</span></div>
+        <div class="row"><span class="nm">Lip &amp; Chin</span><span class="pr">$24</span></div>
+        <div class="row"><span class="nm">Full Face</span><span class="pr">$50</span></div>
+        <div class="row"><span class="nm">Bikini</span><span class="pr">$42</span></div>
+        <div class="row"><span class="nm">Brazilian</span><span class="pr">$62</span></div>
+        <div class="row"><span class="nm">Buttocks</span><span class="pr">$30</span></div>
+        <div class="row"><span class="nm">Stomach</span><span class="pr">$22</span></div>
+        <div class="row"><span class="nm">Chest</span><span class="pr">$30</span></div>
+        <div class="row"><span class="nm">Back</span><span class="pr">$37</span></div>
+        <div class="row"><span class="nm">Half Back</span><span class="pr">$22</span></div>
+        <div class="row"><span class="nm">Underarm</span><span class="pr">$24</span></div>
+      </div>
+    </div>
+
+    <div class="note">
+      <p><strong>Note:</strong> Prices listed are starting prices and may vary based on hair length, thickness, and desired style. Consultation recommended for accurate pricing.</p>
+      <p style="margin-top:10px">6201 Leesburg Pike, Suite #10 &middot; Falls Church, VA 22044 &middot; <a href="tel:+17033370033" style="color:var(--coral)">(703) 337-0033</a></p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="btm">
+  <a href="/">&larr; Back to Zilola Beauty Spa Home</a>
+  <p>&copy; 2026 Zilola Beauty Spa &middot; Falls Church, Virginia</p>
+</footer>
+
+</body>
+</html>

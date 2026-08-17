@@ -1,0 +1,6 @@
+.git
+.gitignore
+*.zip
+prod-*.png
+.DS_Store
+Thumbs.db

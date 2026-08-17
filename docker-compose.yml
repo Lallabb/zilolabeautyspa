@@ -1,0 +1,9 @@
+services:
+  zilola-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: zilola-website
+    restart: unless-stopped
+    ports:
+      - "8080:80"
