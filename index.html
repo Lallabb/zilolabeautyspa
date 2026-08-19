@@ -562,7 +562,7 @@ button{cursor:pointer;font:inherit;border:none;background:none}ul{list-style:non
         <button class="look-card" data-look-step="women" type="button" onclick="openLookbook('women')"><img src="assets/lookbook/women/women-02.webp" alt="Shoulder-length highlighted hairstyle" loading="eager"><span><small>Women</small>Haircuts &amp; styling</span></button>
         <button class="look-card" data-look-step="men" type="button" onclick="openLookbook('men')"><img src="assets/lookbook/men/men-04.webp" alt="Men's fade and styled haircut" loading="lazy"><span><small>Men</small>Haircuts</span></button>
         <button class="look-card" data-look-step="beard" type="button" onclick="openLookbook('beard')"><img src="assets/lookbook/beard/beard-05.webp" alt="Sculpted beard styling inspiration" loading="lazy"><span><small>Men</small>Beard styles</span></button>
-        <button class="look-card has-credit" data-look-step="makeup" type="button" onclick="openLookbook('makeup')"><img src="assets/lookbook/makeup/makeup-09.webp" alt="Outdoor floral makeup portrait by Hellah Naimi" loading="lazy"><span><small>Beauty</small>Makeup styles</span><b class="look-credit">Makeup Artist — Hellah Sardar</b></button>
+        <button class="look-card has-credit" data-look-step="makeup" type="button" onclick="openLookbook('makeup')"><img src="assets/lookbook/makeup/makeup-09.webp" alt="Outdoor floral makeup portrait by Hellah Naimi" loading="lazy"><span><small>Beauty</small>Makeup styles</span><b class="look-credit">Makeup Artist — Hellah Naimi</b></button>
         <button class="look-card" data-look-step="boys" type="button" onclick="openLookbook('boys')"><img src="assets/lookbook/boys/boys-09.webp" alt="Haircut inspiration for boys" loading="lazy"><span><small>Kids</small>Boys' cuts</span></button>
         <button class="look-card" data-look-step="girls" type="button" onclick="openLookbook('girls')"><img src="assets/lookbook/girls/girls-02.webp" alt="Braided hairstyle for girls" loading="lazy"><span><small>Kids</small>Girls' styles</span></button>
         <button class="look-card" data-look-step="nails" type="button" onclick="openLookbook('nails')"><img src="assets/lookbook/nails/nails-16.webp" alt="Detailed floral nail art created at Zilola" loading="lazy"><span><small>Real Zilola work</small>Nail art</span></button>
@@ -709,7 +709,7 @@ button{cursor:pointer;font:inherit;border:none;background:none}ul{list-style:non
   <button class="lc" onclick="closeLB()">×</button>
   <button class="ln lp" onclick="navLB(-1)">‹</button>
   <img src="" alt="">
-  <b class="lb-credit" id="lbCredit">Makeup Artist — Hellah Sardar</b>
+  <b class="lb-credit" id="lbCredit">Makeup Artist — Hellah Naimi</b>
   <button class="ln rn" onclick="navLB(1)">›</button>
 </div>
 
@@ -821,14 +821,14 @@ const LOOKBOOK={
   women:{title:"Women's haircuts",copy:"Cuts, color and texture references for every age and personal style.",count:16,generatedFrom:8,alt:"Women's hairstyle inspiration"},
   men:{title:"Men's haircuts",copy:"Real Zilola cuts and curated inspirations: fades, clean profiles and contemporary finishes.",count:15,generatedFrom:6,alt:"Men's haircut and styling inspiration"},
   beard:{title:"Beard styles",copy:"Line-ups, sculpted contours and beard finishes to bring to your consultation.",count:9,generatedFrom:4,alt:"Beard styling reference"},
-  makeup:{title:"Makeup styles",copy:"From soft polished skin to graphic color and evening definition. Featured work by Makeup Artist Hellah Sardar.",count:14,alt:"Makeup style inspiration"},
+  makeup:{title:"Makeup styles",copy:"From soft polished skin to graphic color and evening definition. Featured work by Makeup Artist Hellah Naimi.",count:14,alt:"Makeup style inspiration"},
   boys:{title:"Boys",copy:"Comfortable, expressive cuts designed for kids and easy everyday care.",count:10,alt:"Haircut inspiration for boys"},
   girls:{title:"Girls",copy:"Braids, curls, bows and playful styles shaped for every personality.",count:8,alt:"Hairstyle inspiration for girls"},
   nails:{title:"Nails — real work & ideas",copy:"Authentic Zilola manicures and pedicures lead the collection, followed by additional style inspirations.",count:33,generatedFrom:23,alt:"Nail art and manicure inspiration"}
 };
 let lookCategory='women',lookItems=[],lookLastFocus=null;
 function lookSrc(cat,i){
-  // Makeup Artist Hellah Sardar's six credited works lead the Makeup collection.
+  // Makeup Artist Hellah Naimi's six credited works lead the Makeup collection.
   const n=cat==='makeup'?(i<6?i+9:i-5):i+1;
   return `assets/lookbook/${cat}/${cat}-${String(n).padStart(2,'0')}.webp`
 }
@@ -840,7 +840,7 @@ function renderLookbook(cat){
   for(let i=0;i<data.count;i++){
     const src=lookSrc(lookCategory,i);lookItems.push(src);const btn=document.createElement('button');btn.type='button';btn.className='look-item';btn.setAttribute('aria-label',`Open ${data.alt} ${i+1} of ${data.count}`);
     const img=document.createElement('img');img.src=src;img.alt=`${data.alt} ${i+1}`;img.loading=i<6?'eager':'lazy';img.decoding='async';btn.appendChild(img);
-    if(lookCategory==='makeup'&&i<6){btn.classList.add('has-credit');const credit=document.createElement('b');credit.className='look-credit';credit.textContent='Makeup Artist — Hellah Sardar';btn.appendChild(credit)}
+    if(lookCategory==='makeup'&&i<6){btn.classList.add('has-credit');const credit=document.createElement('b');credit.className='look-credit';credit.textContent='Makeup Artist — Hellah Naimi';btn.appendChild(credit)}
     if(Number.isInteger(data.generatedFrom)&&i>=data.generatedFrom){btn.classList.add('has-credit');const credit=document.createElement('b');credit.className='look-credit';credit.textContent='Style inspiration';btn.appendChild(credit)}
     btn.onclick=()=>openLookImage(i);grid.appendChild(btn);
   }
